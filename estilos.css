@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Geral */
+
+body {
+    font-family: 'Noto Sans';
+    font-size: 1.1em;
+    width: 100%;
+    height: 750px;
+    margin: 0px;
+}
+
+button {
+
+    background-color: #F47907;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 1.1em;
+
+}
+
+main{
+    padding: 2%;
+}
+
+/* Header */
+header{
+    max-height: 90px;
+    overflow: hidden;
+}
+
+/* Nav-lateral */
+.menu-itens{
+    display: none;
+}
+
+.bar1, .bar2, .bar3 { /*Cria o icone de menu-hamburguer*/
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+
+.change .bar1 { /*Altera a forma do icone de menu-hamburgue para um X*/
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.abrir{ /*Abre o menu-hamburguer*/
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 90px;
+    left: 0;
+    background-color: rgb(49, 46, 46);
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+  }
+
+nav{
+    background-color: #F29D30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    height: 85px;
+    
+}
+
+#logo{
+    max-width: 70px;
+    width: 100%;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#avatar-minha-conta{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.menu-lateral{
+    
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 90px;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.menu-lateral a{
+    
+    margin: 10% 0;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    display: block;
+}
+
+/* Footer */
+
+.rodape {
+    background-color: #3d3b3b;
+    color: rgb(255, 255, 255);
+    font-weight: 300px;
+    padding-top: 5px;
+    overflow: hidden;
+    font-family: "Noto Sans";
+}
+
+.menu-rodape ul {
+    padding-inline-start: 0px;
+}
+
+.menu-rodape li {
+    list-style-type: none;
+    text-align: center;
+
+
+}
+
+.menu-rodape li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.redes img {
+    width: 45px;
+
+
+}
+
+.titulos-rodape {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 20px auto;
+
+}
+
+.menu-rodape h3 {
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+
+}
+
+.menu-rodape hr {
+    border: 1px rgb(110, 109, 109) solid;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+
+}
+
+.redes a {
+ justify-content: center;
+}
+
+.redes-icones p {
+    display: none;
+}
+
+.assinatura {
+    text-align: center;
+    color: rgb(110, 109, 109);
+    justify-content: center;
+    padding: 0 10px;
+}
+
+#logo-footer {
+    margin-top: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.panel {
+    display: none;
+    overflow: hidden;
+}
+
+@media screen and (min-width:600px) {
+.rodape-conteudo{
+   display: flex;
+   justify-content: space-between;
+   padding: 0 40px;
+}
+.panel{
+    display: block;
+}
+.menu-rodape hr {
+    display: none;
+}
+}
+
+/* Home */
+
+/* SobreNos */
+
+/* Página de Ajuda */
+#main-ajuda {
+    padding: 0 5%;
+}
+
+#tutorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tutorial>div {
+    text-align: center;
+}
+
+#lista-beneficios>li {
+    line-height: 25px;
+}
